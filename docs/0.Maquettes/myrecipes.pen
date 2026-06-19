@@ -1,0 +1,4525 @@
+{
+  "version": "2.13",
+  "children": [
+    {
+      "type": "frame",
+      "id": "bi8Au",
+      "x": 0,
+      "y": 0,
+      "name": "Frame",
+      "clip": true,
+      "width": 800,
+      "height": 600,
+      "fill": "#FFFFFF",
+      "layout": "none"
+    },
+    {
+      "type": "frame",
+      "id": "v0pt3w",
+      "x": 900,
+      "y": 0,
+      "name": "01 - Home",
+      "clip": true,
+      "width": 1280,
+      "height": 800,
+      "fill": "#f9fafb",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "rh3P3",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 64,
+          "fill": "#7c3aed",
+          "padding": [
+            0,
+            24
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "rHhvU",
+              "name": "Logo",
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "C0AGm",
+                  "name": "Logo Icon",
+                  "width": 38,
+                  "height": 38,
+                  "fill": "#ede9fe",
+                  "cornerRadius": 8,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "yA1bh",
+                      "name": "Ico",
+                      "width": 20,
+                      "height": 20,
+                      "icon": "utensils",
+                      "library": "lucide",
+                      "fill": "#7c3aed"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "gWkWO",
+                  "name": "Logo Text",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Zc24a",
+                      "name": "App Name",
+                      "fill": "#ffffff",
+                      "content": "O'Recipes",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ConNv",
+                      "name": "Tagline",
+                      "fill": "#c4b5fd",
+                      "content": "Les recettes oRecipes",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "iiGb6",
+              "name": "Nav Right",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "AbOKr",
+                  "name": "Favoris Btn",
+                  "height": 32,
+                  "fill": "#ffffff18",
+                  "cornerRadius": 6,
+                  "gap": 6,
+                  "padding": [
+                    0,
+                    10
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "YIjeg",
+                      "name": "Heart Ico",
+                      "width": 14,
+                      "height": 14,
+                      "icon": "heart",
+                      "library": "lucide",
+                      "fill": "#e9d5ff"
+                    },
+                    {
+                      "type": "text",
+                      "id": "s06be4",
+                      "name": "Favoris Lbl",
+                      "fill": "#e9d5ff",
+                      "content": "Mes Favoris",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "l2uxn2",
+                  "name": "Login Form",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "xlGzL",
+                      "name": "Email In",
+                      "width": 148,
+                      "height": 34,
+                      "fill": "#ffffff18",
+                      "cornerRadius": 6,
+                      "stroke": "#ffffff50",
+                      "strokeWidth": 1.5,
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "sefA0",
+                          "name": "Email PH",
+                          "fill": "#ffffffaa",
+                          "content": "Email",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "WOQDp",
+                      "name": "PW In",
+                      "width": 128,
+                      "height": 34,
+                      "fill": "#ffffff18",
+                      "cornerRadius": 6,
+                      "stroke": "#ffffff50",
+                      "strokeWidth": 1.5,
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "DeX41",
+                          "name": "PW PH",
+                          "fill": "#ffffffaa",
+                          "content": "Mot de passe",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "t2jX36",
+                      "name": "Login Btn",
+                      "height": 34,
+                      "fill": "#ffffff",
+                      "cornerRadius": 6,
+                      "padding": [
+                        0,
+                        14
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "S3adHy",
+                          "name": "Login Lbl",
+                          "fill": "#7c3aed",
+                          "content": "Connexion",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "niXoT",
+          "name": "Body",
+          "width": "fill_container",
+          "height": "fill_container",
+          "children": [
+            {
+              "type": "frame",
+              "id": "C9IHEq",
+              "name": "Sidebar",
+              "width": 220,
+              "height": "fill_container",
+              "fill": "#1f2937",
+              "layout": "vertical",
+              "gap": 8,
+              "padding": [
+                20,
+                16
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "xzoMt",
+                  "name": "SB Title",
+                  "fill": "#ffffff",
+                  "content": "Recettes",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "AMRvf",
+                  "name": "Sep",
+                  "width": "fill_container",
+                  "height": 1,
+                  "fill": "#374151"
+                },
+                {
+                  "type": "frame",
+                  "id": "F6G5Tr",
+                  "name": "SB List",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Njg2E",
+                      "name": "Chicken Biryani",
+                      "width": "fill_container",
+                      "height": 32,
+                      "cornerRadius": 4,
+                      "padding": [
+                        0,
+                        8
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "R6tgA",
+                          "name": "N",
+                          "fill": "#d1d5db",
+                          "content": "Chicken Biryani",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "BFqsR",
+                      "name": "Beef Stew",
+                      "width": "fill_container",
+                      "height": 32,
+                      "cornerRadius": 4,
+                      "padding": [
+                        0,
+                        8
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "OM9NB",
+                          "name": "N",
+                          "fill": "#d1d5db",
+                          "content": "Beef Stew",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "kjkZV",
+                      "name": "Caesar Salad",
+                      "width": "fill_container",
+                      "height": 32,
+                      "cornerRadius": 4,
+                      "padding": [
+                        0,
+                        8
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "aYadj",
+                          "name": "N",
+                          "fill": "#d1d5db",
+                          "content": "Caesar Salad",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "wPY1T",
+                      "name": "Pasta Carbonara",
+                      "width": "fill_container",
+                      "height": 32,
+                      "cornerRadius": 4,
+                      "padding": [
+                        0,
+                        8
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "xPNXp",
+                          "name": "N",
+                          "fill": "#d1d5db",
+                          "content": "Pasta Carbonara",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "YS9p8",
+                      "name": "Chocolate Cake",
+                      "width": "fill_container",
+                      "height": 32,
+                      "cornerRadius": 4,
+                      "padding": [
+                        0,
+                        8
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Lppka",
+                          "name": "N",
+                          "fill": "#d1d5db",
+                          "content": "Chocolate Cake",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "GIHzZ",
+                      "name": "Fish & Chips",
+                      "width": "fill_container",
+                      "height": 32,
+                      "cornerRadius": 4,
+                      "padding": [
+                        0,
+                        8
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "n5ntd0",
+                          "name": "N",
+                          "fill": "#d1d5db",
+                          "content": "Fish & Chips",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "I1QVM",
+                      "name": "Vegetable Curry",
+                      "width": "fill_container",
+                      "height": 32,
+                      "cornerRadius": 4,
+                      "padding": [
+                        0,
+                        8
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "bqm2O",
+                          "name": "N",
+                          "fill": "#d1d5db",
+                          "content": "Vegetable Curry",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "OI74D",
+                      "name": "Ramen Bowl",
+                      "width": "fill_container",
+                      "height": 32,
+                      "cornerRadius": 4,
+                      "padding": [
+                        0,
+                        8
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "M0ggzI",
+                          "name": "N",
+                          "fill": "#d1d5db",
+                          "content": "Ramen Bowl",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ibSLO",
+              "name": "Main",
+              "width": "fill_container",
+              "height": "fill_container",
+              "fill": "#f9fafb",
+              "layout": "vertical",
+              "gap": 20,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "acO0B",
+                  "name": "Top Bar",
+                  "width": "fill_container",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "lLF6B",
+                      "name": "Page Title",
+                      "fill": "#111827",
+                      "content": "Explorer les recettes",
+                      "fontFamily": "Inter",
+                      "fontSize": 22,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "BhKiJ",
+                      "name": "Search Box",
+                      "width": "fill_container",
+                      "height": 40,
+                      "fill": "#ffffff",
+                      "cornerRadius": 8,
+                      "stroke": "#e5e7eb",
+                      "strokeWidth": 1.5,
+                      "gap": 8,
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "sDd2r",
+                          "name": "SrchIco",
+                          "width": 16,
+                          "height": 16,
+                          "icon": "search",
+                          "library": "lucide",
+                          "fill": "#6b7280"
+                        },
+                        {
+                          "type": "text",
+                          "id": "l57Gv0",
+                          "name": "SrchPH",
+                          "fill": "#6b7280",
+                          "content": "Rechercher une recette...",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "X8DJjQ",
+                      "name": "Search Btn",
+                      "height": 40,
+                      "fill": "#7c3aed",
+                      "cornerRadius": 8,
+                      "padding": [
+                        0,
+                        18
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "YQsNr",
+                          "name": "SrchLbl",
+                          "fill": "#ffffff",
+                          "content": "Rechercher",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ZzajF",
+                  "name": "Grid",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "D6JoAe",
+                      "name": "Row1",
+                      "width": "fill_container",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "X6x4t",
+                          "name": "Card-Chicken Biryani",
+                          "width": "fill_container",
+                          "fill": "#ffffff",
+                          "cornerRadius": 10,
+                          "stroke": "#e5e7eb",
+                          "strokeWidth": 1,
+                          "layout": "vertical",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "vGPuX",
+                              "name": "Img",
+                              "width": "fill_container",
+                              "height": 140,
+                              "fill": {
+                                "type": "gradient",
+                                "gradientType": "linear",
+                                "enabled": true,
+                                "rotation": 180,
+                                "size": {
+                                  "height": 1
+                                },
+                                "colors": [
+                                  {
+                                    "color": "#fde68a",
+                                    "position": 0
+                                  },
+                                  {
+                                    "color": "#f59e0b",
+                                    "position": 1
+                                  }
+                                ]
+                              },
+                              "cornerRadius": [
+                                10,
+                                10,
+                                0,
+                                0
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "W6rVt",
+                              "name": "Card Body",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 6,
+                              "padding": 12,
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "qYWxs",
+                                  "name": "TRow",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "YQ0U7",
+                                      "name": "Title",
+                                      "fill": "#111827",
+                                      "content": "Chicken Biryani",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 14,
+                                      "fontWeight": "600"
+                                    },
+                                    {
+                                      "type": "icon",
+                                      "id": "kRjND",
+                                      "name": "Heart",
+                                      "width": 18,
+                                      "height": 18,
+                                      "icon": "heart",
+                                      "library": "lucide",
+                                      "fill": "#d1d5db"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "b99Lw",
+                                  "name": "Cat",
+                                  "fill": "#6b7280",
+                                  "content": "Indien",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Nlzr1",
+                          "name": "Card-Beef Stew",
+                          "width": "fill_container",
+                          "fill": "#ffffff",
+                          "cornerRadius": 10,
+                          "stroke": "#e5e7eb",
+                          "strokeWidth": 1,
+                          "layout": "vertical",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "alKNW",
+                              "name": "Img",
+                              "width": "fill_container",
+                              "height": 140,
+                              "fill": {
+                                "type": "gradient",
+                                "gradientType": "linear",
+                                "enabled": true,
+                                "rotation": 180,
+                                "size": {
+                                  "height": 1
+                                },
+                                "colors": [
+                                  {
+                                    "color": "#fca5a5",
+                                    "position": 0
+                                  },
+                                  {
+                                    "color": "#ef4444",
+                                    "position": 1
+                                  }
+                                ]
+                              },
+                              "cornerRadius": [
+                                10,
+                                10,
+                                0,
+                                0
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "gZtg5",
+                              "name": "Card Body",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 6,
+                              "padding": 12,
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "k8Nxw0",
+                                  "name": "TRow",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "RYx8D",
+                                      "name": "Title",
+                                      "fill": "#111827",
+                                      "content": "Beef Stew",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 14,
+                                      "fontWeight": "600"
+                                    },
+                                    {
+                                      "type": "icon",
+                                      "id": "yGkpV",
+                                      "name": "Heart",
+                                      "width": 18,
+                                      "height": 18,
+                                      "icon": "heart",
+                                      "library": "lucide",
+                                      "fill": "#d1d5db"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "zHBss",
+                                  "name": "Cat",
+                                  "fill": "#6b7280",
+                                  "content": "Britannique",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "rLQLS",
+                          "name": "Card-Caesar Salad",
+                          "width": "fill_container",
+                          "fill": "#ffffff",
+                          "cornerRadius": 10,
+                          "stroke": "#e5e7eb",
+                          "strokeWidth": 1,
+                          "layout": "vertical",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "pDN0y",
+                              "name": "Img",
+                              "width": "fill_container",
+                              "height": 140,
+                              "fill": {
+                                "type": "gradient",
+                                "gradientType": "linear",
+                                "enabled": true,
+                                "rotation": 180,
+                                "size": {
+                                  "height": 1
+                                },
+                                "colors": [
+                                  {
+                                    "color": "#6ee7b7",
+                                    "position": 0
+                                  },
+                                  {
+                                    "color": "#10b981",
+                                    "position": 1
+                                  }
+                                ]
+                              },
+                              "cornerRadius": [
+                                10,
+                                10,
+                                0,
+                                0
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "U4093",
+                              "name": "Card Body",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 6,
+                              "padding": 12,
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "o2nXt",
+                                  "name": "TRow",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "QZopB",
+                                      "name": "Title",
+                                      "fill": "#111827",
+                                      "content": "Caesar Salad",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 14,
+                                      "fontWeight": "600"
+                                    },
+                                    {
+                                      "type": "icon",
+                                      "id": "t90vgN",
+                                      "name": "Heart",
+                                      "width": 18,
+                                      "height": 18,
+                                      "icon": "heart",
+                                      "library": "lucide",
+                                      "fill": "#d1d5db"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "Wm9e3",
+                                  "name": "Cat",
+                                  "fill": "#6b7280",
+                                  "content": "Américain",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Aji8z",
+                      "name": "Row2",
+                      "width": "fill_container",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "A5MqL",
+                          "name": "Card-Pasta Carbonara",
+                          "width": "fill_container",
+                          "fill": "#ffffff",
+                          "cornerRadius": 10,
+                          "stroke": "#e5e7eb",
+                          "strokeWidth": 1,
+                          "layout": "vertical",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "BkIos",
+                              "name": "Img",
+                              "width": "fill_container",
+                              "height": 140,
+                              "fill": {
+                                "type": "gradient",
+                                "gradientType": "linear",
+                                "enabled": true,
+                                "rotation": 180,
+                                "size": {
+                                  "height": 1
+                                },
+                                "colors": [
+                                  {
+                                    "color": "#93c5fd",
+                                    "position": 0
+                                  },
+                                  {
+                                    "color": "#3b82f6",
+                                    "position": 1
+                                  }
+                                ]
+                              },
+                              "cornerRadius": [
+                                10,
+                                10,
+                                0,
+                                0
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "ybidP",
+                              "name": "Card Body",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 6,
+                              "padding": 12,
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "Ehplh",
+                                  "name": "TRow",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "qJ2wQ",
+                                      "name": "Title",
+                                      "fill": "#111827",
+                                      "content": "Pasta Carbonara",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 14,
+                                      "fontWeight": "600"
+                                    },
+                                    {
+                                      "type": "icon",
+                                      "id": "NPbLv",
+                                      "name": "Heart",
+                                      "width": 18,
+                                      "height": 18,
+                                      "icon": "heart",
+                                      "library": "lucide",
+                                      "fill": "#d1d5db"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "V1u1Bd",
+                                  "name": "Cat",
+                                  "fill": "#6b7280",
+                                  "content": "Italien",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "S5X3XS",
+                          "name": "Card-Chocolate Cake",
+                          "width": "fill_container",
+                          "fill": "#ffffff",
+                          "cornerRadius": 10,
+                          "stroke": "#e5e7eb",
+                          "strokeWidth": 1,
+                          "layout": "vertical",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "WscBN",
+                              "name": "Img",
+                              "width": "fill_container",
+                              "height": 140,
+                              "fill": {
+                                "type": "gradient",
+                                "gradientType": "linear",
+                                "enabled": true,
+                                "rotation": 180,
+                                "size": {
+                                  "height": 1
+                                },
+                                "colors": [
+                                  {
+                                    "color": "#d8b4fe",
+                                    "position": 0
+                                  },
+                                  {
+                                    "color": "#9333ea",
+                                    "position": 1
+                                  }
+                                ]
+                              },
+                              "cornerRadius": [
+                                10,
+                                10,
+                                0,
+                                0
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "vWDuG",
+                              "name": "Card Body",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 6,
+                              "padding": 12,
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "Mc6iq",
+                                  "name": "TRow",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "GJpfn",
+                                      "name": "Title",
+                                      "fill": "#111827",
+                                      "content": "Chocolate Cake",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 14,
+                                      "fontWeight": "600"
+                                    },
+                                    {
+                                      "type": "icon",
+                                      "id": "Nu8Xq",
+                                      "name": "Heart",
+                                      "width": 18,
+                                      "height": 18,
+                                      "icon": "heart",
+                                      "library": "lucide",
+                                      "fill": "#d1d5db"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "Q7C8U4",
+                                  "name": "Cat",
+                                  "fill": "#6b7280",
+                                  "content": "Dessert",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "k5IbzD",
+                          "name": "Card-Fish & Chips",
+                          "width": "fill_container",
+                          "fill": "#ffffff",
+                          "cornerRadius": 10,
+                          "stroke": "#e5e7eb",
+                          "strokeWidth": 1,
+                          "layout": "vertical",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "x2Nvrc",
+                              "name": "Img",
+                              "width": "fill_container",
+                              "height": 140,
+                              "fill": {
+                                "type": "gradient",
+                                "gradientType": "linear",
+                                "enabled": true,
+                                "rotation": 180,
+                                "size": {
+                                  "height": 1
+                                },
+                                "colors": [
+                                  {
+                                    "color": "#fdba74",
+                                    "position": 0
+                                  },
+                                  {
+                                    "color": "#f97316",
+                                    "position": 1
+                                  }
+                                ]
+                              },
+                              "cornerRadius": [
+                                10,
+                                10,
+                                0,
+                                0
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "JdoPD",
+                              "name": "Card Body",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 6,
+                              "padding": 12,
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "iN1xg",
+                                  "name": "TRow",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "yVKKL",
+                                      "name": "Title",
+                                      "fill": "#111827",
+                                      "content": "Fish & Chips",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 14,
+                                      "fontWeight": "600"
+                                    },
+                                    {
+                                      "type": "icon",
+                                      "id": "qZKrM",
+                                      "name": "Heart",
+                                      "width": 18,
+                                      "height": 18,
+                                      "icon": "heart",
+                                      "library": "lucide",
+                                      "fill": "#d1d5db"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "FDUnq",
+                                  "name": "Cat",
+                                  "fill": "#6b7280",
+                                  "content": "Britannique",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "FFHgr",
+      "x": 2280,
+      "y": 0,
+      "name": "02 - Recipe Detail",
+      "clip": true,
+      "width": 1280,
+      "height": 900,
+      "fill": "#f9fafb",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "X15K5b",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 64,
+          "fill": "#7c3aed",
+          "padding": [
+            0,
+            24
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "CnD1X",
+              "name": "Logo",
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "l8mMH",
+                  "name": "Logo Icon",
+                  "width": 38,
+                  "height": 38,
+                  "fill": "#ede9fe",
+                  "cornerRadius": 8,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "RAPSf",
+                      "name": "Ico",
+                      "width": 20,
+                      "height": 20,
+                      "icon": "utensils",
+                      "library": "lucide",
+                      "fill": "#7c3aed"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "zpM7R",
+                  "name": "Logo Text",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "pvor0",
+                      "name": "App Name",
+                      "fill": "#ffffff",
+                      "content": "O'Recipes",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "xyAT0",
+                      "name": "Tagline",
+                      "fill": "#c4b5fd",
+                      "content": "Les recettes oRecipes",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "lHGyy",
+              "name": "Nav Right",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "jrlu2",
+                  "name": "Favoris Btn",
+                  "height": 32,
+                  "fill": "#ffffff18",
+                  "cornerRadius": 6,
+                  "gap": 6,
+                  "padding": [
+                    0,
+                    10
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "dhPAs",
+                      "name": "Heart Ico",
+                      "width": 14,
+                      "height": 14,
+                      "icon": "heart",
+                      "library": "lucide",
+                      "fill": "#e9d5ff"
+                    },
+                    {
+                      "type": "text",
+                      "id": "h5Agb",
+                      "name": "Favoris Lbl",
+                      "fill": "#e9d5ff",
+                      "content": "Mes Favoris",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "dexAx",
+                  "name": "Login Form",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "obo1o",
+                      "name": "Email In",
+                      "width": 148,
+                      "height": 34,
+                      "fill": "#ffffff18",
+                      "cornerRadius": 6,
+                      "stroke": "#ffffff50",
+                      "strokeWidth": 1.5,
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Nev6q",
+                          "name": "Email PH",
+                          "fill": "#ffffffaa",
+                          "content": "Email",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "blHGD",
+                      "name": "PW In",
+                      "width": 128,
+                      "height": 34,
+                      "fill": "#ffffff18",
+                      "cornerRadius": 6,
+                      "stroke": "#ffffff50",
+                      "strokeWidth": 1.5,
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "mo2vm",
+                          "name": "PW PH",
+                          "fill": "#ffffffaa",
+                          "content": "Mot de passe",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "JsHVt",
+                      "name": "Login Btn",
+                      "height": 34,
+                      "fill": "#ffffff",
+                      "cornerRadius": 6,
+                      "padding": [
+                        0,
+                        14
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "etOxD",
+                          "name": "Login Lbl",
+                          "fill": "#7c3aed",
+                          "content": "Connexion",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "o4vDK",
+          "name": "Body",
+          "width": "fill_container",
+          "height": "fill_container",
+          "children": [
+            {
+              "type": "frame",
+              "id": "CA7YJ",
+              "name": "Sidebar",
+              "width": 220,
+              "height": "fill_container",
+              "fill": "#1f2937",
+              "layout": "vertical",
+              "gap": 8,
+              "padding": [
+                20,
+                16
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "HjLnu",
+                  "name": "SB Title",
+                  "fill": "#ffffff",
+                  "content": "Recettes",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "Zzusb",
+                  "name": "Sep",
+                  "width": "fill_container",
+                  "height": 1,
+                  "fill": "#374151"
+                },
+                {
+                  "type": "frame",
+                  "id": "Lp4TK",
+                  "name": "SB List",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "QMXic",
+                      "name": "Chicken Biryani",
+                      "width": "fill_container",
+                      "height": 32,
+                      "fill": "#374151",
+                      "cornerRadius": 4,
+                      "padding": [
+                        0,
+                        8
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "uwP66",
+                          "name": "N",
+                          "fill": "#ffffff",
+                          "content": "Chicken Biryani",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dA2Zb",
+                      "name": "Beef Stew",
+                      "width": "fill_container",
+                      "height": 32,
+                      "cornerRadius": 4,
+                      "padding": [
+                        0,
+                        8
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "a2cwWG",
+                          "name": "N",
+                          "fill": "#d1d5db",
+                          "content": "Beef Stew",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "zWA6l",
+                      "name": "Caesar Salad",
+                      "width": "fill_container",
+                      "height": 32,
+                      "cornerRadius": 4,
+                      "padding": [
+                        0,
+                        8
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "mld8k",
+                          "name": "N",
+                          "fill": "#d1d5db",
+                          "content": "Caesar Salad",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "CubeT",
+                      "name": "Pasta Carbonara",
+                      "width": "fill_container",
+                      "height": 32,
+                      "cornerRadius": 4,
+                      "padding": [
+                        0,
+                        8
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "y0rBW",
+                          "name": "N",
+                          "fill": "#d1d5db",
+                          "content": "Pasta Carbonara",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ZtYxN",
+                      "name": "Chocolate Cake",
+                      "width": "fill_container",
+                      "height": 32,
+                      "cornerRadius": 4,
+                      "padding": [
+                        0,
+                        8
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "fdvm6",
+                          "name": "N",
+                          "fill": "#d1d5db",
+                          "content": "Chocolate Cake",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "V5RMU",
+                      "name": "Fish & Chips",
+                      "width": "fill_container",
+                      "height": 32,
+                      "cornerRadius": 4,
+                      "padding": [
+                        0,
+                        8
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "v39kao",
+                          "name": "N",
+                          "fill": "#d1d5db",
+                          "content": "Fish & Chips",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "kdRzB",
+                      "name": "Vegetable Curry",
+                      "width": "fill_container",
+                      "height": 32,
+                      "cornerRadius": 4,
+                      "padding": [
+                        0,
+                        8
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "aSKSH",
+                          "name": "N",
+                          "fill": "#d1d5db",
+                          "content": "Vegetable Curry",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "s9lLYd",
+                      "name": "Ramen Bowl",
+                      "width": "fill_container",
+                      "height": 32,
+                      "cornerRadius": 4,
+                      "padding": [
+                        0,
+                        8
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "EoPFz",
+                          "name": "N",
+                          "fill": "#d1d5db",
+                          "content": "Ramen Bowl",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "b99gM",
+              "name": "Main",
+              "width": "fill_container",
+              "height": "fill_container",
+              "fill": "#f9fafb",
+              "layout": "vertical",
+              "gap": 18,
+              "padding": 28,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "CK5ke",
+                  "name": "Breadcrumb",
+                  "gap": 6,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "UTIKR",
+                      "name": "BC Home",
+                      "fill": "#6b7280",
+                      "content": "Accueil",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "J6sf5h",
+                      "name": "BC Sep",
+                      "fill": "#6b7280",
+                      "content": "›",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "tDVuN",
+                      "name": "BC Recipe",
+                      "fill": "#7c3aed",
+                      "content": "Chicken Biryani",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "Onl0s",
+                  "name": "Recipe Title",
+                  "fill": "#111827",
+                  "content": "Chicken Biryani",
+                  "fontFamily": "Inter",
+                  "fontSize": 28,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "HJo9R",
+                  "name": "Badges",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Pqa5r",
+                      "name": "Indien",
+                      "fill": "#ede9fe",
+                      "cornerRadius": 20,
+                      "padding": [
+                        4,
+                        10
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Jdh0S",
+                          "name": "Lbl",
+                          "fill": "#7c3aed",
+                          "content": "Indien",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "CZm7Y",
+                      "name": "Asiatique",
+                      "fill": "#dbeafe",
+                      "cornerRadius": 20,
+                      "padding": [
+                        4,
+                        10
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "qOmUL",
+                          "name": "Lbl",
+                          "fill": "#1d4ed8",
+                          "content": "Asiatique",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "q4thiE",
+                      "name": "Plat principal",
+                      "fill": "#d1fae5",
+                      "cornerRadius": 20,
+                      "padding": [
+                        4,
+                        10
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "OX6I0",
+                          "name": "Lbl",
+                          "fill": "#065f46",
+                          "content": "Plat principal",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Y22cDr",
+                  "name": "Cols",
+                  "width": "fill_container",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ZOibI",
+                      "name": "Image Col",
+                      "width": 340,
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "luY6g",
+                          "name": "Recipe Image",
+                          "width": 340,
+                          "height": 280,
+                          "fill": {
+                            "type": "gradient",
+                            "gradientType": "linear",
+                            "enabled": true,
+                            "rotation": 180,
+                            "size": {
+                              "height": 1
+                            },
+                            "colors": [
+                              {
+                                "color": "#fde68a",
+                                "position": 0
+                              },
+                              {
+                                "color": "#f59e0b",
+                                "position": 1
+                              }
+                            ]
+                          },
+                          "cornerRadius": 12
+                        },
+                        {
+                          "type": "frame",
+                          "id": "s7GNz",
+                          "name": "Actions Row",
+                          "gap": 10,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "fB5iK",
+                              "name": "Heart Btn",
+                              "fill": "#fff5f5",
+                              "cornerRadius": 8,
+                              "stroke": "#fecaca",
+                              "strokeWidth": 1.5,
+                              "gap": 6,
+                              "padding": [
+                                8,
+                                14
+                              ],
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon",
+                                  "id": "c7Mpi7",
+                                  "name": "Heart Ico",
+                                  "width": 15,
+                                  "height": 15,
+                                  "icon": "heart",
+                                  "library": "lucide",
+                                  "fill": "#ef4444"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "J7yqp",
+                                  "name": "Heart Lbl",
+                                  "fill": "#ef4444",
+                                  "content": "Retirer des favoris",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 12,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "J1qut",
+                              "name": "YT Btn",
+                              "fill": "#ef4444",
+                              "cornerRadius": 8,
+                              "gap": 6,
+                              "padding": [
+                                8,
+                                14
+                              ],
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon",
+                                  "id": "uGmv2",
+                                  "name": "YT Ico",
+                                  "width": 14,
+                                  "height": 14,
+                                  "icon": "play",
+                                  "library": "lucide",
+                                  "fill": "#ffffff"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "T0hIx",
+                                  "name": "YT Lbl",
+                                  "fill": "#ffffff",
+                                  "content": "YouTube",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 12,
+                                  "fontWeight": "500"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "CAR4S",
+                      "name": "Ingredients Col",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "pIiYG",
+                          "name": "Ing Header",
+                          "width": "fill_container",
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "lfU8z",
+                              "name": "Ing Title",
+                              "fill": "#111827",
+                              "content": "Ingrédients",
+                              "fontFamily": "Inter",
+                              "fontSize": 17,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "VNavO",
+                              "name": "Ing Count",
+                              "fill": "#6b7280",
+                              "content": "8 ingrédients",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "S71a86",
+                          "name": "Ing List",
+                          "width": "fill_container",
+                          "fill": "#ffffff",
+                          "cornerRadius": 10,
+                          "stroke": "#e5e7eb",
+                          "strokeWidth": 1,
+                          "layout": "vertical",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "ffGvO",
+                              "name": "Ing-Poulet",
+                              "width": "fill_container",
+                              "height": 44,
+                              "stroke": "#e5e7eb",
+                              "strokeWidth": {
+                                "bottom": 1
+                              },
+                              "padding": [
+                                0,
+                                16
+                              ],
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "MPeZg",
+                                  "name": "L",
+                                  "gap": 10,
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "ellipse",
+                                      "id": "kz8ND",
+                                      "name": "Dot",
+                                      "fill": "#7c3aed",
+                                      "width": 6,
+                                      "height": 6
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "HgJSy",
+                                      "name": "Ing Name",
+                                      "fill": "#111827",
+                                      "content": "Poulet",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 14,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "t4AOBp",
+                                  "name": "Measure",
+                                  "fill": "#6b7280",
+                                  "content": "500 g",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "vgSFK",
+                              "name": "Ing-Riz basmati",
+                              "width": "fill_container",
+                              "height": 44,
+                              "stroke": "#e5e7eb",
+                              "strokeWidth": {
+                                "bottom": 1
+                              },
+                              "padding": [
+                                0,
+                                16
+                              ],
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "dSFGT",
+                                  "name": "L",
+                                  "gap": 10,
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "ellipse",
+                                      "id": "KqXOC",
+                                      "name": "Dot",
+                                      "fill": "#7c3aed",
+                                      "width": 6,
+                                      "height": 6
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "IyDXM",
+                                      "name": "Ing Name",
+                                      "fill": "#111827",
+                                      "content": "Riz basmati",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 14,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "HfXh7",
+                                  "name": "Measure",
+                                  "fill": "#6b7280",
+                                  "content": "300 g",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "oyump",
+                              "name": "Ing-Oignons",
+                              "width": "fill_container",
+                              "height": 44,
+                              "stroke": "#e5e7eb",
+                              "strokeWidth": {
+                                "bottom": 1
+                              },
+                              "padding": [
+                                0,
+                                16
+                              ],
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "GsI62",
+                                  "name": "L",
+                                  "gap": 10,
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "ellipse",
+                                      "id": "SHI5J",
+                                      "name": "Dot",
+                                      "fill": "#7c3aed",
+                                      "width": 6,
+                                      "height": 6
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "oOrVv",
+                                      "name": "Ing Name",
+                                      "fill": "#111827",
+                                      "content": "Oignons",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 14,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "ybVlf",
+                                  "name": "Measure",
+                                  "fill": "#6b7280",
+                                  "content": "2 pcs",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "vtJXG",
+                              "name": "Ing-Tomates",
+                              "width": "fill_container",
+                              "height": 44,
+                              "stroke": "#e5e7eb",
+                              "strokeWidth": {
+                                "bottom": 1
+                              },
+                              "padding": [
+                                0,
+                                16
+                              ],
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "U45Mfo",
+                                  "name": "L",
+                                  "gap": 10,
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "ellipse",
+                                      "id": "POpV3",
+                                      "name": "Dot",
+                                      "fill": "#7c3aed",
+                                      "width": 6,
+                                      "height": 6
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "nQLzK",
+                                      "name": "Ing Name",
+                                      "fill": "#111827",
+                                      "content": "Tomates",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 14,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "wpm1w",
+                                  "name": "Measure",
+                                  "fill": "#6b7280",
+                                  "content": "3 pcs",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "QsXtV",
+                              "name": "Ing-Yaourt",
+                              "width": "fill_container",
+                              "height": 44,
+                              "stroke": "#e5e7eb",
+                              "strokeWidth": {
+                                "bottom": 1
+                              },
+                              "padding": [
+                                0,
+                                16
+                              ],
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "z5U2T",
+                                  "name": "L",
+                                  "gap": 10,
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "ellipse",
+                                      "id": "wJD04",
+                                      "name": "Dot",
+                                      "fill": "#7c3aed",
+                                      "width": 6,
+                                      "height": 6
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "sfeli",
+                                      "name": "Ing Name",
+                                      "fill": "#111827",
+                                      "content": "Yaourt",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 14,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "t1KKQ",
+                                  "name": "Measure",
+                                  "fill": "#6b7280",
+                                  "content": "200 ml",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "kKVnu",
+                              "name": "Ing-Huile",
+                              "width": "fill_container",
+                              "height": 44,
+                              "stroke": "#e5e7eb",
+                              "strokeWidth": {
+                                "bottom": 1
+                              },
+                              "padding": [
+                                0,
+                                16
+                              ],
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "pQbq8",
+                                  "name": "L",
+                                  "gap": 10,
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "ellipse",
+                                      "id": "SkxCQ",
+                                      "name": "Dot",
+                                      "fill": "#7c3aed",
+                                      "width": 6,
+                                      "height": 6
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "RVNgz",
+                                      "name": "Ing Name",
+                                      "fill": "#111827",
+                                      "content": "Huile",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 14,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "KvFp0",
+                                  "name": "Measure",
+                                  "fill": "#6b7280",
+                                  "content": "2 c.s.",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "w2lVNz",
+                              "name": "Ing-Épices Biryani",
+                              "width": "fill_container",
+                              "height": 44,
+                              "stroke": "#e5e7eb",
+                              "strokeWidth": {
+                                "bottom": 1
+                              },
+                              "padding": [
+                                0,
+                                16
+                              ],
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "zMArz",
+                                  "name": "L",
+                                  "gap": 10,
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "ellipse",
+                                      "id": "C1Y8z",
+                                      "name": "Dot",
+                                      "fill": "#7c3aed",
+                                      "width": 6,
+                                      "height": 6
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "Q3aUYd",
+                                      "name": "Ing Name",
+                                      "fill": "#111827",
+                                      "content": "Épices Biryani",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 14,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "h58SEN",
+                                  "name": "Measure",
+                                  "fill": "#6b7280",
+                                  "content": "1 c.s.",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "mkHWy",
+                              "name": "Ing-Sel, poivre",
+                              "width": "fill_container",
+                              "height": 44,
+                              "stroke": "#e5e7eb",
+                              "strokeWidth": {
+                                "bottom": 1
+                              },
+                              "padding": [
+                                0,
+                                16
+                              ],
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "wLuyh",
+                                  "name": "L",
+                                  "gap": 10,
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "ellipse",
+                                      "id": "l2QsdR",
+                                      "name": "Dot",
+                                      "fill": "#7c3aed",
+                                      "width": 6,
+                                      "height": 6
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "uFUOa",
+                                      "name": "Ing Name",
+                                      "fill": "#111827",
+                                      "content": "Sel, poivre",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 14,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "Idb7y",
+                                  "name": "Measure",
+                                  "fill": "#6b7280",
+                                  "content": "à goût",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "q1qJF",
+                  "name": "Instructions",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "PMmIx",
+                      "name": "Instr Title",
+                      "fill": "#111827",
+                      "content": "Instructions",
+                      "fontFamily": "Inter",
+                      "fontSize": 17,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "baAOa",
+                      "name": "Instr Box",
+                      "width": "fill_container",
+                      "fill": "#ffffff",
+                      "cornerRadius": 10,
+                      "stroke": "#e5e7eb",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "KA19X",
+                          "name": "Step",
+                          "fill": "#111827",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "1. Faire revenir les oignons dans l'huile jusqu'à dorure. Ajouter les épices et les tomates concassées.",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "aTeDK",
+                          "name": "Step",
+                          "fill": "#111827",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "2. Incorporer le poulet et cuire 15 minutes. Ajouter le yaourt et laisser mijoter à feu doux.",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "OpBNX",
+                          "name": "Step",
+                          "fill": "#111827",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "3. Cuire le riz basmati séparément. Superposer riz et poulet en couches dans une grande casserole.",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "V5xFP",
+                          "name": "Step",
+                          "fill": "#111827",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "4. Couvrir et cuire à feu très doux 20 min. Servir chaud garni de coriandre fraîche.",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "mHt5c",
+      "x": 3660,
+      "y": 0,
+      "name": "03 - Favoris",
+      "clip": true,
+      "width": 1280,
+      "height": 800,
+      "fill": "#f9fafb",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "fApBG",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 64,
+          "fill": "#7c3aed",
+          "padding": [
+            0,
+            24
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "A8sBT",
+              "name": "Logo",
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "zCWUu",
+                  "name": "Logo Icon",
+                  "width": 38,
+                  "height": 38,
+                  "fill": "#ede9fe",
+                  "cornerRadius": 8,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "ojZpi",
+                      "name": "Ico",
+                      "width": 20,
+                      "height": 20,
+                      "icon": "utensils",
+                      "library": "lucide",
+                      "fill": "#7c3aed"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "IejML",
+                  "name": "Logo Text",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "jxRsO",
+                      "name": "App Name",
+                      "fill": "#ffffff",
+                      "content": "O'Recipes",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "A78Fz",
+                      "name": "Tagline",
+                      "fill": "#c4b5fd",
+                      "content": "Les recettes oRecipes",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "q2juX",
+              "name": "Nav Right",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "FbeVj",
+                  "name": "Favoris Btn",
+                  "height": 32,
+                  "fill": "#ffffff30",
+                  "cornerRadius": 6,
+                  "gap": 6,
+                  "padding": [
+                    0,
+                    10
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "RPCr6",
+                      "name": "Heart Ico",
+                      "width": 14,
+                      "height": 14,
+                      "icon": "heart",
+                      "library": "lucide",
+                      "fill": "#ffffff"
+                    },
+                    {
+                      "type": "text",
+                      "id": "MmGrP",
+                      "name": "Favoris Lbl",
+                      "fill": "#ffffff",
+                      "content": "Mes Favoris",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "K8A6I",
+                  "name": "Divider",
+                  "width": 1,
+                  "height": 24,
+                  "fill": "#ffffff40"
+                },
+                {
+                  "type": "frame",
+                  "id": "TDHTo",
+                  "name": "User Area",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "wldNr",
+                      "name": "Welcome",
+                      "fill": "#ffffff",
+                      "content": "Bienvenue Pablo !",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "eo5aZ",
+                      "name": "Logout Btn",
+                      "height": 32,
+                      "fill": "#ffffff18",
+                      "cornerRadius": 6,
+                      "stroke": "#ffffff60",
+                      "strokeWidth": 1.5,
+                      "padding": [
+                        6,
+                        14
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "eiv4r",
+                          "name": "Logout Lbl",
+                          "fill": "#ffffff",
+                          "content": "Déconnexion",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "pZvll",
+          "name": "Body",
+          "width": "fill_container",
+          "height": "fill_container",
+          "children": [
+            {
+              "type": "frame",
+              "id": "C5P7oi",
+              "name": "Sidebar",
+              "width": 220,
+              "height": "fill_container",
+              "fill": "#1f2937",
+              "layout": "vertical",
+              "gap": 8,
+              "padding": [
+                20,
+                16
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "FdhwY",
+                  "name": "SB Title",
+                  "fill": "#ffffff",
+                  "content": "Recettes",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "f7SN78",
+                  "name": "Sep",
+                  "width": "fill_container",
+                  "height": 1,
+                  "fill": "#374151"
+                },
+                {
+                  "type": "frame",
+                  "id": "xo1Ns",
+                  "name": "SB List",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "vsmO8",
+                      "name": "Chicken Biryani",
+                      "width": "fill_container",
+                      "height": 32,
+                      "cornerRadius": 4,
+                      "padding": [
+                        0,
+                        8
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "b8dyd",
+                          "name": "N",
+                          "fill": "#d1d5db",
+                          "content": "Chicken Biryani",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "sK1nE",
+                      "name": "Beef Stew",
+                      "width": "fill_container",
+                      "height": 32,
+                      "cornerRadius": 4,
+                      "padding": [
+                        0,
+                        8
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "WgquQ",
+                          "name": "N",
+                          "fill": "#d1d5db",
+                          "content": "Beef Stew",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "VZsyH",
+                      "name": "Caesar Salad",
+                      "width": "fill_container",
+                      "height": 32,
+                      "cornerRadius": 4,
+                      "padding": [
+                        0,
+                        8
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "wRx80",
+                          "name": "N",
+                          "fill": "#d1d5db",
+                          "content": "Caesar Salad",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "K4VYc",
+                      "name": "Pasta Carbonara",
+                      "width": "fill_container",
+                      "height": 32,
+                      "cornerRadius": 4,
+                      "padding": [
+                        0,
+                        8
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "NLZNr",
+                          "name": "N",
+                          "fill": "#d1d5db",
+                          "content": "Pasta Carbonara",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "R4M6l7",
+                      "name": "Chocolate Cake",
+                      "width": "fill_container",
+                      "height": 32,
+                      "cornerRadius": 4,
+                      "padding": [
+                        0,
+                        8
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "P43zW",
+                          "name": "N",
+                          "fill": "#d1d5db",
+                          "content": "Chocolate Cake",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "emrOz",
+                      "name": "Fish & Chips",
+                      "width": "fill_container",
+                      "height": 32,
+                      "cornerRadius": 4,
+                      "padding": [
+                        0,
+                        8
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "U2LbxZ",
+                          "name": "N",
+                          "fill": "#d1d5db",
+                          "content": "Fish & Chips",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "U1WXJ2",
+                      "name": "Vegetable Curry",
+                      "width": "fill_container",
+                      "height": 32,
+                      "cornerRadius": 4,
+                      "padding": [
+                        0,
+                        8
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Dhu5D",
+                          "name": "N",
+                          "fill": "#d1d5db",
+                          "content": "Vegetable Curry",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ymhta",
+                      "name": "Ramen Bowl",
+                      "width": "fill_container",
+                      "height": 32,
+                      "cornerRadius": 4,
+                      "padding": [
+                        0,
+                        8
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "YseNW",
+                          "name": "N",
+                          "fill": "#d1d5db",
+                          "content": "Ramen Bowl",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "HSDVb",
+              "name": "Main",
+              "width": "fill_container",
+              "height": "fill_container",
+              "fill": "#f9fafb",
+              "layout": "vertical",
+              "gap": 24,
+              "padding": 28,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Y8Qwe",
+                  "name": "Page Header",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "yqAmq",
+                      "name": "Title Area",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "fEY5X",
+                          "name": "Page Title",
+                          "fill": "#111827",
+                          "content": "Mes Favoris",
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "mbRar",
+                          "name": "Count Badge",
+                          "fill": "#ede9fe",
+                          "cornerRadius": 20,
+                          "padding": [
+                            4,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "D4foK",
+                              "name": "Count",
+                              "fill": "#7c3aed",
+                              "content": "6 recettes",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "XQLxu",
+                      "name": "Subtitle",
+                      "fill": "#6b7280",
+                      "content": "Vos recettes sauvegardées",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "QqL5u",
+                  "name": "Grid",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "i5PSv5",
+                      "name": "Row1",
+                      "width": "fill_container",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "lJoSv",
+                          "name": "Fav-Chicken Biryani",
+                          "width": "fill_container",
+                          "fill": "#ffffff",
+                          "cornerRadius": 10,
+                          "stroke": "#e5e7eb",
+                          "strokeWidth": 1,
+                          "layout": "vertical",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "pNq63",
+                              "name": "Img",
+                              "width": "fill_container",
+                              "height": 130,
+                              "fill": {
+                                "type": "gradient",
+                                "gradientType": "linear",
+                                "enabled": true,
+                                "rotation": 180,
+                                "size": {
+                                  "height": 1
+                                },
+                                "colors": [
+                                  {
+                                    "color": "#fde68a",
+                                    "position": 0
+                                  },
+                                  {
+                                    "color": "#f59e0b",
+                                    "position": 1
+                                  }
+                                ]
+                              },
+                              "cornerRadius": [
+                                10,
+                                10,
+                                0,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "HWon0",
+                                  "layoutPosition": "absolute",
+                                  "x": 8,
+                                  "y": 8,
+                                  "name": "Heart Tag",
+                                  "fill": "#ef4444",
+                                  "cornerRadius": 20,
+                                  "padding": [
+                                    4,
+                                    8
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "icon",
+                                      "id": "FsyQx",
+                                      "name": "H",
+                                      "width": 12,
+                                      "height": 12,
+                                      "icon": "heart",
+                                      "library": "lucide",
+                                      "fill": "#ffffff"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "I3ygL",
+                              "name": "Card Body",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 6,
+                              "padding": 12,
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "V6nj6",
+                                  "name": "TRow",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "c4sMS",
+                                      "name": "Title",
+                                      "fill": "#111827",
+                                      "content": "Chicken Biryani",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 14,
+                                      "fontWeight": "600"
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "vUXMY",
+                                      "name": "Remove Btn",
+                                      "fill": "#fef2f2",
+                                      "cornerRadius": 6,
+                                      "padding": [
+                                        4,
+                                        8
+                                      ],
+                                      "children": [
+                                        {
+                                          "type": "icon",
+                                          "id": "IL9zK",
+                                          "name": "X",
+                                          "width": 13,
+                                          "height": 13,
+                                          "icon": "x",
+                                          "library": "lucide",
+                                          "fill": "#ef4444"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "dVQ46",
+                                  "name": "Cat",
+                                  "fill": "#6b7280",
+                                  "content": "Indien",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "v5oB9",
+                          "name": "Fav-Pasta Carbonara",
+                          "width": "fill_container",
+                          "fill": "#ffffff",
+                          "cornerRadius": 10,
+                          "stroke": "#e5e7eb",
+                          "strokeWidth": 1,
+                          "layout": "vertical",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "EJJ5Y",
+                              "name": "Img",
+                              "width": "fill_container",
+                              "height": 130,
+                              "fill": {
+                                "type": "gradient",
+                                "gradientType": "linear",
+                                "enabled": true,
+                                "rotation": 180,
+                                "size": {
+                                  "height": 1
+                                },
+                                "colors": [
+                                  {
+                                    "color": "#93c5fd",
+                                    "position": 0
+                                  },
+                                  {
+                                    "color": "#3b82f6",
+                                    "position": 1
+                                  }
+                                ]
+                              },
+                              "cornerRadius": [
+                                10,
+                                10,
+                                0,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "KQIqj",
+                                  "layoutPosition": "absolute",
+                                  "x": 8,
+                                  "y": 8,
+                                  "name": "Heart Tag",
+                                  "fill": "#ef4444",
+                                  "cornerRadius": 20,
+                                  "padding": [
+                                    4,
+                                    8
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "icon",
+                                      "id": "vvLRf",
+                                      "name": "H",
+                                      "width": 12,
+                                      "height": 12,
+                                      "icon": "heart",
+                                      "library": "lucide",
+                                      "fill": "#ffffff"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "fPeSW",
+                              "name": "Card Body",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 6,
+                              "padding": 12,
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "MlIIU",
+                                  "name": "TRow",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "PvfhZ",
+                                      "name": "Title",
+                                      "fill": "#111827",
+                                      "content": "Pasta Carbonara",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 14,
+                                      "fontWeight": "600"
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "tRMD5",
+                                      "name": "Remove Btn",
+                                      "fill": "#fef2f2",
+                                      "cornerRadius": 6,
+                                      "padding": [
+                                        4,
+                                        8
+                                      ],
+                                      "children": [
+                                        {
+                                          "type": "icon",
+                                          "id": "K7EO4",
+                                          "name": "X",
+                                          "width": 13,
+                                          "height": 13,
+                                          "icon": "x",
+                                          "library": "lucide",
+                                          "fill": "#ef4444"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "hYyJv",
+                                  "name": "Cat",
+                                  "fill": "#6b7280",
+                                  "content": "Italien",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "SnXF9",
+                          "name": "Fav-Chocolate Cake",
+                          "width": "fill_container",
+                          "fill": "#ffffff",
+                          "cornerRadius": 10,
+                          "stroke": "#e5e7eb",
+                          "strokeWidth": 1,
+                          "layout": "vertical",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "K56BVN",
+                              "name": "Img",
+                              "width": "fill_container",
+                              "height": 130,
+                              "fill": {
+                                "type": "gradient",
+                                "gradientType": "linear",
+                                "enabled": true,
+                                "rotation": 180,
+                                "size": {
+                                  "height": 1
+                                },
+                                "colors": [
+                                  {
+                                    "color": "#d8b4fe",
+                                    "position": 0
+                                  },
+                                  {
+                                    "color": "#9333ea",
+                                    "position": 1
+                                  }
+                                ]
+                              },
+                              "cornerRadius": [
+                                10,
+                                10,
+                                0,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "nkqVv",
+                                  "layoutPosition": "absolute",
+                                  "x": 8,
+                                  "y": 8,
+                                  "name": "Heart Tag",
+                                  "fill": "#ef4444",
+                                  "cornerRadius": 20,
+                                  "padding": [
+                                    4,
+                                    8
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "icon",
+                                      "id": "iFqFL",
+                                      "name": "H",
+                                      "width": 12,
+                                      "height": 12,
+                                      "icon": "heart",
+                                      "library": "lucide",
+                                      "fill": "#ffffff"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "Lfxk2",
+                              "name": "Card Body",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 6,
+                              "padding": 12,
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "gaJsv",
+                                  "name": "TRow",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "IqKE9",
+                                      "name": "Title",
+                                      "fill": "#111827",
+                                      "content": "Chocolate Cake",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 14,
+                                      "fontWeight": "600"
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "mW8oC",
+                                      "name": "Remove Btn",
+                                      "fill": "#fef2f2",
+                                      "cornerRadius": 6,
+                                      "padding": [
+                                        4,
+                                        8
+                                      ],
+                                      "children": [
+                                        {
+                                          "type": "icon",
+                                          "id": "UDGkp",
+                                          "name": "X",
+                                          "width": 13,
+                                          "height": 13,
+                                          "icon": "x",
+                                          "library": "lucide",
+                                          "fill": "#ef4444"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "T4euh",
+                                  "name": "Cat",
+                                  "fill": "#6b7280",
+                                  "content": "Dessert",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "qNDbe",
+                      "name": "Row2",
+                      "width": "fill_container",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "sESf2",
+                          "name": "Fav-Beef Stew",
+                          "width": "fill_container",
+                          "fill": "#ffffff",
+                          "cornerRadius": 10,
+                          "stroke": "#e5e7eb",
+                          "strokeWidth": 1,
+                          "layout": "vertical",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "ibn7R",
+                              "name": "Img",
+                              "width": "fill_container",
+                              "height": 130,
+                              "fill": {
+                                "type": "gradient",
+                                "gradientType": "linear",
+                                "enabled": true,
+                                "rotation": 180,
+                                "size": {
+                                  "height": 1
+                                },
+                                "colors": [
+                                  {
+                                    "color": "#fca5a5",
+                                    "position": 0
+                                  },
+                                  {
+                                    "color": "#ef4444",
+                                    "position": 1
+                                  }
+                                ]
+                              },
+                              "cornerRadius": [
+                                10,
+                                10,
+                                0,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "S1lCKV",
+                                  "layoutPosition": "absolute",
+                                  "x": 8,
+                                  "y": 8,
+                                  "name": "Heart Tag",
+                                  "fill": "#ef4444",
+                                  "cornerRadius": 20,
+                                  "padding": [
+                                    4,
+                                    8
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "icon",
+                                      "id": "je0J2",
+                                      "name": "H",
+                                      "width": 12,
+                                      "height": 12,
+                                      "icon": "heart",
+                                      "library": "lucide",
+                                      "fill": "#ffffff"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "xVgsr",
+                              "name": "Card Body",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 6,
+                              "padding": 12,
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "YqNyl",
+                                  "name": "TRow",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "EJcrE",
+                                      "name": "Title",
+                                      "fill": "#111827",
+                                      "content": "Beef Stew",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 14,
+                                      "fontWeight": "600"
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "UJ59P",
+                                      "name": "Remove Btn",
+                                      "fill": "#fef2f2",
+                                      "cornerRadius": 6,
+                                      "padding": [
+                                        4,
+                                        8
+                                      ],
+                                      "children": [
+                                        {
+                                          "type": "icon",
+                                          "id": "EBzIe",
+                                          "name": "X",
+                                          "width": 13,
+                                          "height": 13,
+                                          "icon": "x",
+                                          "library": "lucide",
+                                          "fill": "#ef4444"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "WNsls",
+                                  "name": "Cat",
+                                  "fill": "#6b7280",
+                                  "content": "Britannique",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "FETWX",
+                          "name": "Fav-Caesar Salad",
+                          "width": "fill_container",
+                          "fill": "#ffffff",
+                          "cornerRadius": 10,
+                          "stroke": "#e5e7eb",
+                          "strokeWidth": 1,
+                          "layout": "vertical",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "vyS6V",
+                              "name": "Img",
+                              "width": "fill_container",
+                              "height": 130,
+                              "fill": {
+                                "type": "gradient",
+                                "gradientType": "linear",
+                                "enabled": true,
+                                "rotation": 180,
+                                "size": {
+                                  "height": 1
+                                },
+                                "colors": [
+                                  {
+                                    "color": "#6ee7b7",
+                                    "position": 0
+                                  },
+                                  {
+                                    "color": "#10b981",
+                                    "position": 1
+                                  }
+                                ]
+                              },
+                              "cornerRadius": [
+                                10,
+                                10,
+                                0,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "Q6t4g",
+                                  "layoutPosition": "absolute",
+                                  "x": 8,
+                                  "y": 8,
+                                  "name": "Heart Tag",
+                                  "fill": "#ef4444",
+                                  "cornerRadius": 20,
+                                  "padding": [
+                                    4,
+                                    8
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "icon",
+                                      "id": "k8eRpj",
+                                      "name": "H",
+                                      "width": 12,
+                                      "height": 12,
+                                      "icon": "heart",
+                                      "library": "lucide",
+                                      "fill": "#ffffff"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "MiVs9",
+                              "name": "Card Body",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 6,
+                              "padding": 12,
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "DQjsf",
+                                  "name": "TRow",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "c2PtJ",
+                                      "name": "Title",
+                                      "fill": "#111827",
+                                      "content": "Caesar Salad",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 14,
+                                      "fontWeight": "600"
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "Vzg5I",
+                                      "name": "Remove Btn",
+                                      "fill": "#fef2f2",
+                                      "cornerRadius": 6,
+                                      "padding": [
+                                        4,
+                                        8
+                                      ],
+                                      "children": [
+                                        {
+                                          "type": "icon",
+                                          "id": "pHuGT",
+                                          "name": "X",
+                                          "width": 13,
+                                          "height": 13,
+                                          "icon": "x",
+                                          "library": "lucide",
+                                          "fill": "#ef4444"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "sdgNe",
+                                  "name": "Cat",
+                                  "fill": "#6b7280",
+                                  "content": "Américain",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Dq9VP",
+                          "name": "Fav-Ramen Bowl",
+                          "width": "fill_container",
+                          "fill": "#ffffff",
+                          "cornerRadius": 10,
+                          "stroke": "#e5e7eb",
+                          "strokeWidth": 1,
+                          "layout": "vertical",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "i7Vgkm",
+                              "name": "Img",
+                              "width": "fill_container",
+                              "height": 130,
+                              "fill": {
+                                "type": "gradient",
+                                "gradientType": "linear",
+                                "enabled": true,
+                                "rotation": 180,
+                                "size": {
+                                  "height": 1
+                                },
+                                "colors": [
+                                  {
+                                    "color": "#fdba74",
+                                    "position": 0
+                                  },
+                                  {
+                                    "color": "#f97316",
+                                    "position": 1
+                                  }
+                                ]
+                              },
+                              "cornerRadius": [
+                                10,
+                                10,
+                                0,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "XFKU9",
+                                  "layoutPosition": "absolute",
+                                  "x": 8,
+                                  "y": 8,
+                                  "name": "Heart Tag",
+                                  "fill": "#ef4444",
+                                  "cornerRadius": 20,
+                                  "padding": [
+                                    4,
+                                    8
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "icon",
+                                      "id": "SFxrc",
+                                      "name": "H",
+                                      "width": 12,
+                                      "height": 12,
+                                      "icon": "heart",
+                                      "library": "lucide",
+                                      "fill": "#ffffff"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "R1T7o",
+                              "name": "Card Body",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 6,
+                              "padding": 12,
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "A2Eoct",
+                                  "name": "TRow",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "z35aD",
+                                      "name": "Title",
+                                      "fill": "#111827",
+                                      "content": "Ramen Bowl",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 14,
+                                      "fontWeight": "600"
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "YBEGM",
+                                      "name": "Remove Btn",
+                                      "fill": "#fef2f2",
+                                      "cornerRadius": 6,
+                                      "padding": [
+                                        4,
+                                        8
+                                      ],
+                                      "children": [
+                                        {
+                                          "type": "icon",
+                                          "id": "LnoHI",
+                                          "name": "X",
+                                          "width": 13,
+                                          "height": 13,
+                                          "icon": "x",
+                                          "library": "lucide",
+                                          "fill": "#ef4444"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "ydpzd",
+                                  "name": "Cat",
+                                  "fill": "#6b7280",
+                                  "content": "Japonais",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "lKWU7",
+      "x": 5040,
+      "y": 0,
+      "name": "04 - Login",
+      "clip": true,
+      "width": 1280,
+      "height": 700,
+      "fill": "#f9fafb",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "IuMzI",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 64,
+          "fill": "#7c3aed",
+          "padding": [
+            0,
+            24
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "a5o7fl",
+              "name": "Logo",
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ZwycE",
+                  "name": "Logo Icon",
+                  "width": 38,
+                  "height": 38,
+                  "fill": "#ede9fe",
+                  "cornerRadius": 8,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "gLUMx",
+                      "name": "Ico",
+                      "width": 20,
+                      "height": 20,
+                      "icon": "utensils",
+                      "library": "lucide",
+                      "fill": "#7c3aed"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "We4W3",
+                  "name": "Logo Text",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "jEH1V",
+                      "name": "App Name",
+                      "fill": "#ffffff",
+                      "content": "O'Recipes",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Qq8hG",
+                      "name": "Tagline",
+                      "fill": "#c4b5fd",
+                      "content": "Les recettes oRecipes",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "PLWoD",
+              "name": "Nav Right",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "JbQTR",
+                  "name": "Favoris Btn",
+                  "height": 32,
+                  "fill": "#ffffff18",
+                  "cornerRadius": 6,
+                  "gap": 6,
+                  "padding": [
+                    0,
+                    10
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "estqk",
+                      "name": "Heart Ico",
+                      "width": 14,
+                      "height": 14,
+                      "icon": "heart",
+                      "library": "lucide",
+                      "fill": "#e9d5ff"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fVR9G",
+                      "name": "Favoris Lbl",
+                      "fill": "#e9d5ff",
+                      "content": "Mes Favoris",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "IAy8n",
+                  "name": "Login Form",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "By1Ut",
+                      "name": "Email In",
+                      "width": 148,
+                      "height": 34,
+                      "fill": "#ffffff18",
+                      "cornerRadius": 6,
+                      "stroke": "#ffffff50",
+                      "strokeWidth": 1.5,
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Xu2DU",
+                          "name": "Email PH",
+                          "fill": "#ffffffaa",
+                          "content": "Email",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "TrtWl",
+                      "name": "PW In",
+                      "width": 128,
+                      "height": 34,
+                      "fill": "#ffffff18",
+                      "cornerRadius": 6,
+                      "stroke": "#ffffff50",
+                      "strokeWidth": 1.5,
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "cfBC3",
+                          "name": "PW PH",
+                          "fill": "#ffffffaa",
+                          "content": "Mot de passe",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "b3SD45",
+                      "name": "Login Btn",
+                      "height": 34,
+                      "fill": "#ffffff",
+                      "cornerRadius": 6,
+                      "padding": [
+                        0,
+                        14
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "CUNHU",
+                          "name": "Login Lbl",
+                          "fill": "#7c3aed",
+                          "content": "Connexion",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "JimBg",
+          "name": "Main",
+          "width": "fill_container",
+          "height": "fill_container",
+          "fill": "#f9fafb",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "S9LrO",
+              "name": "Login Card",
+              "width": 440,
+              "fill": "#ffffff",
+              "cornerRadius": 12,
+              "stroke": "#e5e7eb",
+              "strokeWidth": 1,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#00000014",
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "blur": 24
+              },
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "hfBJO",
+                  "name": "Card Header",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": [
+                    28,
+                    28,
+                    20,
+                    28
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "F2pcqA",
+                      "name": "Card Title",
+                      "fill": "#111827",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Bienvenue sur O'Recipes",
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 22,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "pPwh8",
+                      "name": "Card Sub",
+                      "fill": "#6b7280",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Connectez-vous pour sauvegarder vos recettes favorites",
+                      "lineHeight": 1.5,
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Z5rDhX",
+                  "name": "Tabs",
+                  "width": "fill_container",
+                  "padding": [
+                    0,
+                    20
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Y82uTw",
+                      "name": "Tab Login",
+                      "width": "fill_container",
+                      "height": 44,
+                      "fill": "#7c3aed",
+                      "cornerRadius": [
+                        8,
+                        0,
+                        0,
+                        8
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "oqjvT",
+                          "name": "Tab Login Lbl",
+                          "fill": "#ffffff",
+                          "content": "Connexion",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Q3GG2",
+                      "name": "Tab Signup",
+                      "width": "fill_container",
+                      "height": 44,
+                      "fill": "#f3f4f6",
+                      "cornerRadius": [
+                        0,
+                        8,
+                        8,
+                        0
+                      ],
+                      "stroke": "#e5e7eb",
+                      "strokeWidth": 1,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "bpsLL",
+                          "name": "Tab Signup Lbl",
+                          "fill": "#6b7280",
+                          "content": "Inscription",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "zh7uZ",
+                  "name": "Form",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": [
+                    24,
+                    28,
+                    28,
+                    28
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "U2THo1",
+                      "name": "Field-Email",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "zSSwD",
+                          "name": "Label",
+                          "fill": "#111827",
+                          "content": "Email",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "a3TrAk",
+                          "name": "Input",
+                          "width": "fill_container",
+                          "height": 42,
+                          "fill": "#ffffff",
+                          "cornerRadius": 8,
+                          "stroke": "#e5e7eb",
+                          "strokeWidth": 1.5,
+                          "gap": 10,
+                          "padding": [
+                            0,
+                            14
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "rs4Da",
+                              "name": "Ico",
+                              "width": 16,
+                              "height": 16,
+                              "icon": "mail",
+                              "library": "lucide",
+                              "fill": "#6b7280"
+                            },
+                            {
+                              "type": "text",
+                              "id": "U6Hz4",
+                              "name": "PH",
+                              "fill": "#9ca3af",
+                              "content": "votre@email.com",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "MvZPh",
+                      "name": "Field-Mot de passe",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "y3p9m",
+                          "name": "Label",
+                          "fill": "#111827",
+                          "content": "Mot de passe",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "X5xvnw",
+                          "name": "Input",
+                          "width": "fill_container",
+                          "height": 42,
+                          "fill": "#ffffff",
+                          "cornerRadius": 8,
+                          "stroke": "#e5e7eb",
+                          "strokeWidth": 1.5,
+                          "gap": 10,
+                          "padding": [
+                            0,
+                            14
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "x1rRxo",
+                              "name": "Ico",
+                              "width": 16,
+                              "height": 16,
+                              "icon": "lock",
+                              "library": "lucide",
+                              "fill": "#6b7280"
+                            },
+                            {
+                              "type": "text",
+                              "id": "dsezh",
+                              "name": "PH",
+                              "fill": "#9ca3af",
+                              "content": "••••••••",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "WeSKm",
+                      "name": "Forgot Row",
+                      "width": "fill_container",
+                      "justifyContent": "end",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "tqkFX",
+                          "name": "Forgot",
+                          "fill": "#7c3aed",
+                          "content": "Mot de passe oublié ?",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "gZrrB",
+                      "name": "Submit Btn",
+                      "width": "fill_container",
+                      "height": 46,
+                      "fill": "#7c3aed",
+                      "cornerRadius": 8,
+                      "gap": 8,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "GdsDC",
+                          "name": "Submit Ico",
+                          "width": 16,
+                          "height": 16,
+                          "icon": "log-in",
+                          "library": "lucide",
+                          "fill": "#ffffff"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ldluS",
+                          "name": "Submit Lbl",
+                          "fill": "#ffffff",
+                          "content": "Se connecter",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "JeaYr",
+                      "name": "Divider Row",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "jMIYW",
+                          "name": "Line L",
+                          "width": "fill_container",
+                          "height": 1,
+                          "fill": "#e5e7eb"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ndwue",
+                          "name": "Or",
+                          "fill": "#6b7280",
+                          "content": "ou",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "cYKks",
+                          "name": "Line R",
+                          "width": "fill_container",
+                          "height": 1,
+                          "fill": "#e5e7eb"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "NxS5a",
+                      "name": "Signup Hint",
+                      "width": "fill_container",
+                      "gap": 6,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "XpaP2",
+                          "name": "Hint",
+                          "fill": "#6b7280",
+                          "content": "Pas encore de compte ?",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "f6GkZ0",
+                          "name": "Signup Link",
+                          "fill": "#7c3aed",
+                          "content": "Créer un compte",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "name": "api-myrecipes",
+  "version": "1.0.0",
+  "description": "API REST MyRecipes — Express 5, ESM, MVC, PostgreSQL, TheMealDB proxy",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "db:create": "node migrations/createTables.js",
+    "db:seed": "node migrations/seedUsers.js",
+    "db:reset": "npm run db:create && npm run db:seed",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": ["express", "recipes", "themealdb", "rest-api", "sequelize"],
+  "author": "Pablo",
+  "license": "MIT",
+  "dependencies": {
+    "argon2": "^0.44.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "http-status-codes": "^2.3.0",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.3",
+    "pg": "^8.16.3",
+    "sequelize": "^6.37.7",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@vitest/coverage-v8": "^4.1.9",
+    "eslint": "^10.5.0",
+    "nodemon": "^3.1.11",
+    "supertest": "^7.2.2",
+    "vitest": "^4.1.9"
+  }
+}
