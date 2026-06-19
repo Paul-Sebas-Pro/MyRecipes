@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
-import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card";
+import { Card, CardContent } from "../components/ui/card";
 import { Input } from "../components/ui/input";
 import { Button } from "../components/ui/button";
 
@@ -19,11 +19,9 @@ export default function LoginPage() {
   const [isError, setIsError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleSubmit = async (e: { preventDefault: () => void }) => {
-    e.preventDefault();
+  const handleSubmit = async () => {
     setIsLoading(true);
     setMessage("");
-
     try {
       if (mode === "login") {
         await login(email, password);
@@ -44,38 +42,48 @@ export default function LoginPage() {
     }
   };
 
+  const switchMode = (next: Mode) => {
+    setMode(next);
+    setMessage("");
+  };
+
   return (
     <div className="max-w-md mx-auto">
-      <Card>
-        <CardHeader>
-          <CardTitle className="text-2xl text-center">
-            {mode === "login" ? "Connexion" : "Créer un compte"}
-          </CardTitle>
-        </CardHeader>
-        <CardContent>
+      <Card className="border border-[#e5e7eb] shadow-sm">
+        <CardContent className="pt-6">
+          {/* Onglets */}
           <div className="flex gap-2 mb-6">
-            <Button
+            <button
               type="button"
-              variant={mode === "login" ? "default" : "outline"}
-              className="flex-1"
-              onClick={() => { setMode("login"); setMessage(""); }}
+              onClick={() => switchMode("login")}
+              className={`flex-1 h-10 rounded-lg text-[14px] font-semibold transition-colors cursor-pointer ${
+                mode === "login"
+                  ? "bg-[#7c3aed] text-white"
+                  : "bg-transparent border border-[#e5e7eb] text-[#6b7280] hover:bg-gray-50"
+              }`}
             >
               Connexion
-            </Button>
-            <Button
+            </button>
+            <button
               type="button"
-              variant={mode === "signup" ? "default" : "outline"}
-              className="flex-1"
-              onClick={() => { setMode("signup"); setMessage(""); }}
+              onClick={() => switchMode("signup")}
+              className={`flex-1 h-10 rounded-lg text-[14px] font-semibold transition-colors cursor-pointer ${
+                mode === "signup"
+                  ? "bg-[#7c3aed] text-white"
+                  : "bg-transparent border border-[#e5e7eb] text-[#6b7280] hover:bg-gray-50"
+              }`}
             >
               Inscription
-            </Button>
+            </button>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form
+            onSubmit={(e) => { e.preventDefault(); handleSubmit(); }}
+            className="space-y-4"
+          >
             {mode === "signup" && (
               <div className="space-y-1">
-                <label htmlFor="pseudo" className="text-sm font-medium text-gray-700">
+                <label htmlFor="pseudo" className="text-[13px] font-medium text-[#374151]">
                   Pseudo
                 </label>
                 <Input
@@ -90,7 +98,7 @@ export default function LoginPage() {
             )}
 
             <div className="space-y-1">
-              <label htmlFor="email" className="text-sm font-medium text-gray-700">
+              <label htmlFor="email" className="text-[13px] font-medium text-[#374151]">
                 Email
               </label>
               <Input
@@ -104,7 +112,7 @@ export default function LoginPage() {
             </div>
 
             <div className="space-y-1">
-              <label htmlFor="password" className="text-sm font-medium text-gray-700">
+              <label htmlFor="password" className="text-[13px] font-medium text-[#374151]">
                 Mot de passe
               </label>
               <Input
@@ -119,7 +127,7 @@ export default function LoginPage() {
 
             {mode === "signup" && (
               <div className="space-y-1">
-                <label htmlFor="passwordConfirm" className="text-sm font-medium text-gray-700">
+                <label htmlFor="passwordConfirm" className="text-[13px] font-medium text-[#374151]">
                   Confirmer le mot de passe
                 </label>
                 <Input
@@ -133,7 +141,11 @@ export default function LoginPage() {
               </div>
             )}
 
-            <Button type="submit" className="w-full" disabled={isLoading}>
+            <Button
+              type="submit"
+              className="w-full bg-[#7c3aed] hover:bg-violet-800"
+              disabled={isLoading}
+            >
               {isLoading
                 ? "Chargement..."
                 : mode === "login"
@@ -144,7 +156,7 @@ export default function LoginPage() {
 
           {message && (
             <div
-              className={`mt-4 p-3 rounded-lg text-sm text-center ${
+              className={`mt-4 p-3 rounded-lg text-[13px] text-center ${
                 isError ? "bg-red-50 text-red-700" : "bg-green-50 text-green-700"
               }`}
             >

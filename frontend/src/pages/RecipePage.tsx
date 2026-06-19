@@ -4,9 +4,9 @@ import type { Recipe } from "../@types/recipe";
 import { getRecipeById } from "../services/api";
 import { useFavorites } from "../context/FavoritesContext";
 import { useAuth } from "../context/AuthContext";
-import { Badge } from "../components/ui/badge";
-import { Button } from "../components/ui/button";
 import { Skeleton } from "../components/ui/skeleton";
+import { Heart, Play } from "lucide-react";
+import { translateCategory, translateArea } from "../lib/translations";
 
 export default function RecipePage() {
   const { id } = useParams<{ id: string }>();
@@ -27,11 +27,16 @@ export default function RecipePage() {
 
   if (loading) {
     return (
-      <div className="max-w-4xl mx-auto space-y-6">
-        <Skeleton className="h-96 w-full rounded-lg" />
-        <div className="grid md:grid-cols-2 gap-8">
-          <Skeleton className="h-64 rounded-lg" />
-          <Skeleton className="h-64 rounded-lg" />
+      <div className="space-y-5">
+        <Skeleton className="h-5 w-52" />
+        <Skeleton className="h-8 w-80" />
+        <div className="flex gap-2">
+          <Skeleton className="h-6 w-20 rounded-full" />
+          <Skeleton className="h-6 w-20 rounded-full" />
+        </div>
+        <div className="flex gap-6">
+          <Skeleton className="w-85 h-70 rounded-xl shrink-0" />
+          <Skeleton className="flex-1 h-70 rounded-xl" />
         </div>
       </div>
     );
@@ -40,10 +45,12 @@ export default function RecipePage() {
   if (error || !recipe) {
     return (
       <div className="text-center py-16">
-        <h2 className="text-2xl font-bold text-gray-800 mb-4">Recette non trouvée</h2>
-        <Button asChild variant="outline">
-          <Link to="/">← Retour aux recettes</Link>
-        </Button>
+        <h2 className="text-2xl font-bold text-[#111827] mb-4">
+          Recette non trouvée
+        </h2>
+        <Link to="/" className="text-[#7c3aed] hover:underline text-sm">
+          ← Retour aux recettes
+        </Link>
       </div>
     );
   }
@@ -51,65 +58,132 @@ export default function RecipePage() {
   const favorite = isFavorite(recipe.id);
 
   return (
-    <div className="max-w-4xl mx-auto">
-      <Button asChild variant="outline" className="mb-6">
-        <Link to="/">← Retour aux recettes</Link>
-      </Button>
-
-      <div className="relative h-96 rounded-lg overflow-hidden mb-8">
-        <img src={recipe.thumbnail} alt={recipe.name} className="w-full h-full object-cover" />
-        {isLoggedIn && (
-          <button
-            onClick={() => toggleFavorite(recipe.id, recipe.name, recipe.thumbnail)}
-            className="absolute top-4 right-4 w-14 h-14 flex items-center justify-center bg-white/90 hover:bg-white rounded-full shadow-lg transition-all hover:scale-110"
-            aria-label={favorite ? "Retirer des favoris" : "Ajouter aux favoris"}
-          >
-            <span className="text-3xl">{favorite ? "❤️" : "🤍"}</span>
-          </button>
-        )}
-        <div className="absolute bottom-0 left-0 right-0 bg-linear-to-t from-black/70 to-transparent p-6">
-          <h1 className="text-4xl font-bold text-white">{recipe.name}</h1>
-        </div>
+    <div className="space-y-4.5">
+      {/* Fil d'ariane */}
+      <div className="flex items-center gap-1.5 text-[13px]">
+        <Link
+          to="/"
+          className="text-[#6b7280] hover:text-[#7c3aed] transition-colors"
+        >
+          Accueil
+        </Link>
+        <span className="text-[#6b7280]">›</span>
+        <span className="text-[#7c3aed]">{recipe.name}</span>
       </div>
 
-      <div className="flex flex-wrap gap-2 mb-8">
-        {recipe.category && <Badge variant="secondary">{recipe.category}</Badge>}
-        {recipe.area && <Badge variant="outline">{recipe.area}</Badge>}
+      {/* Titre */}
+      <h1 className="text-[28px] font-bold text-[#111827] leading-tight">
+        {recipe.name}
+      </h1>
+
+      {/* Badges */}
+      <div className="flex flex-wrap gap-2">
+        {recipe.category && (
+          <span className="px-2.5 py-1 rounded-full bg-[#ede9fe] text-[#7c3aed] text-[12px] font-medium">
+            {translateCategory(recipe.category)}
+          </span>
+        )}
+        {recipe.area && (
+          <span className="px-2.5 py-1 rounded-full bg-[#dbeafe] text-[#1d4ed8] text-[12px] font-medium">
+            {translateArea(recipe.area)}
+          </span>
+        )}
         {recipe.tags.map((tag) => (
-          <Badge key={tag} variant="outline">{tag}</Badge>
+          <span
+            key={tag}
+            className="px-2.5 py-1 rounded-full bg-[#d1fae5] text-[#065f46] text-[12px] font-medium"
+          >
+            {tag}
+          </span>
         ))}
       </div>
 
-      <div className="grid md:grid-cols-2 gap-8">
-        <div className="bg-white rounded-xl border border-neutral-200 shadow p-6">
-          <h2 className="text-xl font-bold text-gray-800 mb-4">Ingrédients</h2>
-          <ul className="space-y-2">
-            {recipe.ingredients.map((ing, i) => (
-              <li key={i} className="flex justify-between pb-2 border-b border-gray-100 text-sm">
-                <span className="font-medium text-gray-800">{ing.name}</span>
-                <span className="text-gray-500">{ing.measure}</span>
-              </li>
-            ))}
-          </ul>
+      {/* Deux colonnes */}
+      <div className="flex gap-6">
+        {/* Colonne gauche : image + actions */}
+        <div className="w-85 shrink-0 flex flex-col gap-3">
+          <img
+            src={recipe.thumbnail}
+            alt={recipe.name}
+            className="w-85 h-70 object-cover rounded-xl"
+          />
+          <div className="flex items-center gap-2.5">
+            {isLoggedIn && (
+              <button
+                type="button"
+                onClick={() =>
+                  toggleFavorite(recipe.id, recipe.name, recipe.thumbnail)
+                }
+                className={`flex items-center gap-1.5 px-3.5 py-2 rounded-lg border text-[12px] font-medium transition-colors cursor-pointer ${
+                  favorite
+                    ? "bg-[#fff5f5] border-[#fecaca] text-[#ef4444] hover:bg-red-50"
+                    : "bg-white border-[#e5e7eb] text-[#6b7280] hover:bg-gray-50"
+                }`}
+              >
+                <Heart
+                  size={15}
+                  className={
+                    favorite
+                      ? "fill-[#ef4444] text-[#ef4444]"
+                      : "text-[#6b7280]"
+                  }
+                />
+                {favorite ? "Retirer des favoris" : "Ajouter aux favoris"}
+              </button>
+            )}
+            {recipe.youtube && (
+              <a
+                href={recipe.youtube}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 px-3.5 py-2 bg-[#ef4444] text-white rounded-lg text-[12px] font-medium hover:bg-red-600 transition-colors"
+              >
+                <Play size={14} />
+                YouTube
+              </a>
+            )}
+          </div>
         </div>
 
-        <div className="bg-white rounded-xl border border-neutral-200 shadow p-6">
-          <h2 className="text-xl font-bold text-gray-800 mb-4">Instructions</h2>
-          <p className="text-gray-700 text-sm leading-relaxed whitespace-pre-line">
-            {recipe.instructions}
-          </p>
-          {recipe.youtube && (
-            <a
-              href={recipe.youtube}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block mt-4 text-sm text-red-600 hover:underline"
-            >
-              ▶ Voir la vidéo YouTube
-            </a>
-          )}
+        {/* Colonne droite : ingrédients */}
+        <div className="flex-1 flex flex-col gap-2.5 min-w-0">
+          <div className="flex items-center justify-between">
+            <h2 className="text-[17px] font-bold text-[#111827]">
+              Ingrédients
+            </h2>
+            <span className="text-[13px] text-[#6b7280]">
+              {recipe.ingredients.length} ingrédients
+            </span>
+          </div>
+          <div className="bg-white rounded-[10px] border border-[#e5e7eb] overflow-hidden">
+            {recipe.ingredients.map((ing, i) => (
+              <div
+                key={i}
+                className={`flex items-center justify-between px-4 h-11 text-[14px] ${
+                  i < recipe.ingredients.length - 1
+                    ? "border-b border-[#e5e7eb]"
+                    : ""
+                }`}
+              >
+                <span className="font-medium text-[#111827]">{ing.name}</span>
+                <span className="text-[#6b7280]">{ing.measure}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
+
+      {/* Instructions */}
+      {recipe.instructions && (
+        <div className="bg-white rounded-[10px] border border-[#e5e7eb] p-5">
+          <h2 className="text-[17px] font-bold text-[#111827] mb-3">
+            Préparation
+          </h2>
+          <p className="text-[#374151] text-[14px] leading-relaxed whitespace-pre-line">
+            {recipe.instructions}
+          </p>
+        </div>
+      )}
     </div>
   );
 }
